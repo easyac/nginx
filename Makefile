@@ -1,7 +1,7 @@
 build-dev:
-	docker build -t easyac/nginx:dev .
+	docker build -f ./Dockerfile.dev -t easyac/nginx:dev .
 
-build:
+docker-build:
 	docker build -t easyac/nginx .
 
 docker-push-dev:
